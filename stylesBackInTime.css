@@ -98,6 +98,7 @@ body, html {
     justify-content: space-around;
     margin-top: 50px;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 /* Stile dei box */
@@ -113,6 +114,7 @@ body, html {
     cursor: pointer;
     text-decoration: none;
     transition: transform 0.3s ease;
+    margin: 20px;
 }
 
 .box:hover {
@@ -126,8 +128,8 @@ body, html {
 }
 
 .box-blue .box-img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
 }
 
 .box-blue .box-text {
@@ -142,8 +144,8 @@ body, html {
 }
 
 .box-white .box-img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
 }
 
 .box-white .box-text {
@@ -169,16 +171,19 @@ body, html {
     }
     
     .box {
-        width: 120px;
-        height: 120px;
+        width: 80%;
+        height: auto;
     }
     
     .box-img {
-        width: 40px;
-        height: 40px;
+        width: 80%;
+        height: auto;
+    }
+
+    .box-text {
+        font-size: 1.5rem;
     }
 }
-
 
 /* Galleria di immagini */
 .image-gallery {
@@ -196,7 +201,7 @@ body, html {
 }
 
 button {
-    background-color: #4CAF50; /* Colore verde */
+    background-color: #d9e3da; /* Colore verde */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -205,7 +210,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #fbfefc;
 }
 
 #prev-button {
@@ -220,4 +225,16 @@ button:hover {
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+/* Responsività per galleria immagini */
+@media (max-width: 768px) {
+    .gallery-image {
+        width: 90%;
+        max-width: 100%;
+    }
+    button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
 }

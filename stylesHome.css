@@ -69,7 +69,7 @@ body, html {
 .dropdown-menu a {
     text-decoration: none;
     color: #333;
-    font-size: 18px;
+    font-size: 2.5vw; /* Dimensione variabile a seconda della larghezza dello schermo */
     font-weight: bold;
     display: block;
 }
@@ -96,7 +96,7 @@ body, html {
 .title1 {
     text-align: center;
     color: rgb(39, 63, 27);  /* Colore dorato */
-    font-size: 3rem;  /* Dimensione del font */
+    font-size: 5vw;  /* La dimensione del font sarà il 5% della larghezza dello schermo */
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -106,7 +106,78 @@ body, html {
 .subtitle {
     text-align: center;
     color: darkgreen;  /* Colore verde scuro */
-    font-size: 3rem;
+    font-size: 4vw; /* Anche qui la dimensione è relativa alla larghezza dello schermo */
     font-weight: bold;
 }
 
+/* Media query per dispositivi mobili */
+@media (max-width: 768px) {
+    /* Navbar: Adattiamo la navbar per schermi piccoli */
+    .navbar {
+        height: 40px; /* Altezza ridotta */
+        padding-left: 10px; /* Meno spazio a sinistra */
+    }
+
+    /* Icona del burger menu: più grande sui dispositivi mobili */
+    .burger-menu {
+        width: 30px;
+        height: 20px;
+    }
+
+    /* Cambia la dimensione del testo per il titolo */
+    .title1 {
+        font-size: 6vw;  /* Aumento della dimensione del titolo sui dispositivi mobili */
+        margin-bottom: 10px;
+    }
+
+    /* Cambia la dimensione del sottotitolo */
+    .subtitle {
+        font-size: 5vw;  /* Ridotto rispetto alla versione desktop */
+    }
+
+    /* La sezione home avrà meno padding in alto sui dispositivi mobili */
+    .home {
+        padding-top: 80px; /* Spazio più ridotto per la navbar su schermi piccoli */
+    }
+
+    /* Menu a tendina: Impostiamo una larghezza di 100% per il menu */
+    .dropdown-menu {
+        width: 100%; /* Menu a tutta larghezza */
+        top: 60px; /* Menu subito sotto la navbar */
+    }
+
+    /* Box e testo nella home saranno centrati */
+    .box {
+        width: 100%; /* Box a larghezza piena */
+        text-align: center;
+    }
+
+    /* Aggiustiamo la dimensione del testo nel menu */
+    .dropdown-menu a {
+        font-size: 4.5vw;  /* Font-size relativo in base alla larghezza dello schermo */
+    }
+}
+
+/* Media query per schermi molto piccoli (es. smartphone) */
+@media (max-width: 480px) {
+    /* Ridurre la dimensione del titolo */
+    .title1 {
+        font-size: 8vw;  /* Più grande sui telefoni, per una visibilità migliore */
+    }
+
+    /* Ridurre la dimensione del sottotitolo */
+    .subtitle {
+        font-size: 7vw;  /* Ancora più grande su schermi molto piccoli */
+    }
+
+    /* Modificare il layout della home per schermi piccoli */
+    .home {
+        flex-direction: column;
+        padding-top: 60px; /* Ancora meno spazio in alto */
+    }
+
+    /* Cambia la dimensione del menu */
+    .dropdown-menu a {
+        font-size: 6vw;
+    }
+}

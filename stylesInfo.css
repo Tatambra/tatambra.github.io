@@ -156,7 +156,6 @@ h1 {
 p {
     font-size: 3rem;
     line-height: 1.6;
-   
     margin-bottom: 15px;
 }
 
@@ -179,7 +178,7 @@ strong {
 /* Titolo in corsivo */
 h1 {
     font-style: italic;  /* Applica il corsivo al titolo */
-    font-size: 2rem; 
+    font-size: 2rem;
 }
 
 /* Layout a griglia per gli eventi */
@@ -240,5 +239,33 @@ a:hover {
 
     .event-img {
         width: 40px;
+    }
+
+    .title1 {
+        font-size: 5rem; /* Dimensione del titolo ridotta */
+    }
+
+    .subtitle {
+        font-size: 2rem; /* Dimensione del sottotitolo ridotta */
+    }
+
+    .info-box {
+        width: 90%; /* Allarga il riquadro su schermi più piccoli */
+    }
+
+    p {
+        font-size: 1rem; /* Riduci la dimensione del testo */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Riduci la dimensione del titolo */
+    }
+
+    .event-info {
+        margin-bottom: 10px;
+    }
+
+    .event-img {
+        width: 35px; /* Rende le immagini più piccole su mobile */
     }
 }
