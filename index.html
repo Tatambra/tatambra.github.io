@@ -3,39 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Il Mio Sito Web</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Pagina con Sfondo</title>
+    <link rel="stylesheet" href="stylesHome.css">
 </head>
 <body>
-    <header>
-        <h1>FRANESCO ED AMBRA</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Chi Sono</a></li>
-                <li><a href="#contact">Contatti</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="home">
-        <h2>Home</h2>
-        <p>Questa è la home page del mio sito web. Qui troverai informazioni su di me, il mio lavoro e tanto altro!</p>
+    <!-- Barra in alto con l'icona del burger menu -->
+    <div class="navbar">
+        <div class="burger-menu" id="burger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+
+    <nav class="dropdown-menu" id="dropdown-menu">
+        <ul>
+            <li><a href="informazioni.html">Informazioni</a></li> <!-- Link a informazioni.html -->
+            <li><a href="backInTime.html">Back in Time</a></li>
+            <li><a href="#conosci-gli-sposi">Conosci gli sposi</a></li>
+            <li><a href="#invitati">Invitati</a></li>
+            <li><a href="index.html">Homepage</a></li>
+        </ul>
+    </nav>
+    
+
+    <!-- La pagina sarà solo lo sfondo, senza contenuti -->
+    <section class="home">
+        <!-- Testo sopra l'immagine -->
+        <div class="title1">
+            <h1>Francesco e Ambra</h1>
+        </div>
+        <div class="subtitle">
+            <h2>Benvenuto al matrimonio</h2>
+        </div>
     </section>
 
-    <section id="about">
-        <h2>Chi Sono</h2>
-        <p>Mi chiamo [Nome] e sono appassionato di [argomento]. Questo è il mio sito web dove condivido i miei progetti e idee.</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contatti</h2>
-        <p>Puoi contattarmi via email all'indirizzo: <a href="mailto:tuo@email.com">tuo@email.com</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Il Mio Sito Web</p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back in Time</title>
+    <link rel="stylesheet" href="stylesBackInTime.css"> <!-- Colleghiamo il CSS -->
+</head>
+<body style="background-color: #D3F9D8;"> <!-- Sfondo verde chiaro -->
+    
+    <!-- Barra in alto con l'icona del burger menu -->
+    <div class="navbar">
+        <div class="burger-menu" id="burger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+
+    <!-- Menu nascosto che si aprirà al click -->
+    <nav class="dropdown-menu" id="dropdown-menu">
+        <ul>
+            <li><a href="informazioni.html">Informazioni</a></li>
+            <li><a href="backInTime.html">Back in Time</a></li>
+            <li><a href="#conosci-gli-sposi">Conosci gli sposi</a></li>
+            <li><a href="#invitati">Invitati</a></li>
+            <li><a href="index.html">Homepage</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenuti della pagina con i riquadri -->
+    <section class="home">
+        <div class="container">
+            <!-- Riquadro SPOSO -->
+            <a href="javascript:void(0);" class="box box-blue" id="show-images-sposo">
+                <img src="icona_sposo.png" alt="Icona 1" class="box-img">
+                <p class="box-text">SPOSO</p>
+            </a>
+            <!-- Riquadro SPOSA -->
+            <a href="javascript:void(0);" class="box box-white" id="show-images-sposa">
+                <img src="icona_sposa.png" alt="Icona 2" class="box-img">
+                <p class="box-text">SPOSA</p>
+            </a>
+        </div>
+
+        <!-- Galleria di immagini nascosta -->
+        <div id="image-gallery" class="image-gallery" style="display:none;">
+            <div class="image-container">
+                <img src="https://drive.google.com/uc?id=1wOvJgi3tVy2WARDLuxrnP7He5zSQgiYx" alt="Immagine 1" class="gallery-image" id="image-display">
+            </div>
+            <button id="prev-button">Indietro</button>
+            <button id="next-button">Avanti</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script> <!-- Collegamento al file script -->
+    <script src="get_immagini.js"></script>
+
+</body>
+</html>

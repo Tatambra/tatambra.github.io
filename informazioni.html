@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informazioni</title>
+    <link rel="stylesheet" href="stylesInfo.css"> <!-- Colleghiamo lo stesso foglio di stile -->
+</head>
+<body style="background-color: #D3F9D8;"> <!-- Sfondo verde chiaro -->
+    
+    <!-- Barra in alto con l'icona del burger menu -->
+    <div class="navbar">
+        <div class="burger-menu" id="burger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+
+    <!-- Menu nascosto che si aprirà al click -->
+    <nav class="dropdown-menu" id="dropdown-menu">
+        <ul>
+            <li><a href="informazioni.html">Informazioni</a></li> <!-- Link a informazioni.html -->
+            <li><a href="backInTime.html">Back in Time</a></li>
+            <li><a href="#conosci-gli-sposi">Conosci gli sposi</a></li>
+            <li><a href="#invitati">Invitati</a></li>
+            <li><a href="index.html">Homepage</a></li>
+        </ul>
+    </nav>
+    
+    
+
+<!-- Contenuti della pagina Informazioni con il riquadro verde chiaro -->
+<section class="home">
+    <div class="info-box">
+        <h1>Francesco ed Ambra sono lieti di averti con loro in questo giorno speciale ... </h1>
+        <p><strong>Programma del giorno:</strong></p>
+        
+        <!-- Aggiungiamo un'immagine sopra il primo orario -->
+        <div class="event-info">
+            <img src="casa_ambra.png" alt="Casa della sposa" class="event-img left-icon">
+            <p>Ore 9:00 <a href="https://maps.app.goo.gl/Jau1xhTDq2XmWNXD8">Casa della sposa</a></p>
+            <img src="maps_point.png" alt="Icona a destra" class="event-img right-icon">
+        </div>
+        
+        <div class="event-info">
+            <img src="casa_sposo.png" alt="Casa dello sposo" class="event-img left-icon">
+            <p>Ore 9:00 <a href="https://maps.app.goo.gl/Z39q76Q98vsAwkeq5">Casa dello sposo</a></p>
+            <img src="maps_point.png" alt="Icona a destra" class="event-img right-icon">
+        </div>
+
+        <div class="event-info">
+            <img src="church.png" alt="Basilica di San Saba" class="event-img left-icon">
+            <p>Ore 11:00 <a href="https://maps.app.goo.gl/sJq5sXbmjiWnSv8E7">Basilica di San Saba</a></p>
+            <img src="maps_point.png" alt="Icona a destra" class="event-img right-icon">
+        </div>
+
+        <div class="event-info">
+            <img src="wine.png" alt="Villa Fonte Nuova" class="event-img left-icon">
+            <p>Ore 14:00 <a href="https://maps.app.goo.gl/eVYjEoRvLNFomNKQ6">Villa Fonte Nuova</a></p>
+            <img src="maps_point.png" alt="Icona a destra" class="event-img right-icon">
+        </div>
+    </div>
+</section>
+
+
+
+    <script src="script.js"></script> <!-- Collegamento al file script -->
+</body>
+</html>
