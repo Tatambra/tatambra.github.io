@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conosci gli sposi</title>
+  <link rel="stylesheet" href="stylesInfo.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-ZM75jsLVQ5shPKrVmxljZQvZfT6pLy1lqVKoJjD8jF7KceV+aJjY3V4FYxWnLzB8FV2y5p8N5vIx0sKFxDPs3w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <style>
+    .intervista-button {
+      display: inline-block;
+      text-align: center;
+      font-size: 1.5rem;
+      padding: 14px 28px;
+      background-color: #ab9692;
+      color: #ffffff; /* testo bianco */
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .intervista-button:hover {
+      background-color: #8c7873;
+    }
+
+    .button-wrapper {
+      text-align: center;
+    }
+
+    .intervista-button i {
+      color: #dca4af; /* colore rosato solo per l’icona */
+      font-size: 2rem;
+      display: block;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body style="background-color: #ffffff;">
+  <!-- Navbar con burger menu -->
+  <div class="navbar">
+    <div class="burger-menu" id="burger-menu">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </div>
+
+  <!-- Menu a tendina -->
+  <nav class="dropdown-menu" id="dropdown-menu">
+    <ul>
+      <li><a href="index.html">Homepage</a></li>
+      <li><a href="informazioni.html">Informazioni</a></li>
+      <li><a href="backInTime.html">Back in Time</a></li>
+      <li><a href="conosci_gli_sposi.html">Conosci gli sposi</a></li>
+       <li><a href="amici_sposi.html">Amici degli sposi</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenuto principale -->
+  <section class="home">
+    <div class="info-box">
+      <h1>Conosci gli sposi</h1>
+
+      <p style="margin-bottom: 30px;">
+        Un breve video per scoprire qualcosa in più su Francesco e Ambra... 😄
+      </p>
+
+      <div class="button-wrapper">
+        <a
+          href="https://drive.google.com/file/d/1LFzispoNisFFvXi3yt2Ej7kd8FpSbRIY/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="intervista-button"
+        >
+          <i class="fa-solid fa-video"></i>
+          Intervista<br />Doppia
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script> <!-- Burger menu JS -->
+</body>
+</html>

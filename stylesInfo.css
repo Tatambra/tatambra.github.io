@@ -1,32 +1,37 @@
-/* Reset di margini e padding */
+/* ----------------------- */
+/* RESET & BASE STYLES */
+/* ----------------------- */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* La pagina prende tutto lo spazio disponibile */
 body, html {
     height: 100%;
     font-family: Arial, sans-serif;
+    background-color: #D3F9D8;
 }
 
-/* La barra in alto (Navbar) */
+/* ----------------------- */
+/* NAVBAR & BURGER MENU */
+/* ----------------------- */
+
 .navbar {
     width: 100%;
-    height: 50px; /* Altezza della barra */
-    background-color: #ac898f; /* Rosa chiaro */
+    height: 50px;
+    background-color: #ac898f;
     display: flex;
-    justify-content: flex-start; /* Allinea l'icona a sinistra */
+    justify-content: flex-start;
     align-items: center;
-    padding-left: 20px; /* Distanza dal lato sinistro */
-    position: fixed; /* Barra fissa in alto */
+    padding-left: 20px;
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000; /* La barra rimane sopra ad altri contenuti */
+    z-index: 1000;
 }
 
-/* Icona del burger menu */
 .burger-menu {
     width: 30px;
     height: 20px;
@@ -36,23 +41,25 @@ body, html {
     cursor: pointer;
 }
 
-/* Le linee dell'icona */
 .line {
     width: 100%;
     height: 4px;
-    background-color: #882626; /* Colore delle linee */
+    background-color: #882626;
 }
 
-/* Menu a tendina (inizialmente nascosto) */
+/* ----------------------- */
+/* DROPDOWN MENU */
+/* ----------------------- */
+
 .dropdown-menu {
-    display: none; /* Nascondiamo il menu di default */
+    display: none;
     position: fixed;
-    top: 50px; /* Posizioniamo il menu subito sotto la navbar */
+    top: 50px;
     left: 0;
     width: 100%;
-    background-color: #ba9ba0; /* Rosa chiaro, come la barra */
+    background-color: #ba9ba0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 999; /* Deve essere sopra la sezione home */
+    z-index: 999;
 }
 
 .dropdown-menu ul {
@@ -74,198 +81,190 @@ body, html {
     display: block;
 }
 
-/* Aggiungere uno sfondo al passaggio del mouse */
 .dropdown-menu a:hover {
     background-color: #a8788f;
 }
 
-/* La sezione Home copre tutta la pagina e ha lo sfondo */
+/* ----------------------- */
+/* SEZIONE HOME */
+/* ----------------------- */
+
 .home {
     height: 100%;
-    background-image: url('fioreAmbra.jpg'); /* Nome del tuo file immagine */
-    background-size: cover;  /* L'immagine copre tutta l'area */
-    background-position: center;  /* Centriamo l'immagine */
+    background-image: url('fioreAmbra.jpg');
+    background-size: cover;
+    background-position: center;
     display: flex;
-    justify-content: center;  /* Centra orizzontalmente */
-    align-items: center;  /* Centra verticalmente */
-    flex-direction: column; /* Impostiamo la direzione verticale per il testo */
-    padding-top: 100px; /* Aggiungiamo spazio in alto per la navbar e il menu */
-}
-
-/* Stile per il titolo (Francesco e Ambra) */
-.title1 {
-    text-align: center;
-    color: rgb(255, 0, 187);  /* Colore dorato */
-    font-size: 15rem;  /* Dimensione del font */
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-
-/* Stile per il sottotitolo (Benvenuto al matrimonio) */
-.subtitle {
-    text-align: center;
-    color: darkgreen;  /* Colore verde scuro */
-    font-size: 3rem;
-    font-weight: bold;
-}
-
-/* Nuova classe per il riquadro delle informazioni */
-.info-box {
-    background-color: #D3F9D8; /* Verde chiaro */
-    border: 2px solid #006400; /* Bordo verde scuro */
-    padding: 20px; /* Distanza tra il testo e il bordo */
-    width: 80%; /* Impostiamo una larghezza fissa per il riquadro */
-    max-width: 800px; /* Impediamo che il riquadro diventi troppo largo */
-    margin: 20px auto; /* Centrato nella pagina con uno spazio sopra e sotto */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leggera ombra */
-    border-radius: 10px; /* Angoli arrotondati */
-}
-/* Nuovo stile per l'immagine accanto al testo */
-.event-info {
-    display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+/* ----------------------- */
+/* INFO BOX */
+/* ----------------------- */
+
+.info-box {
+    background-color: #ede4ea;
+    border: 4px solid #64003a;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(142, 28, 28, 0.1);
+    text-align: center;
+}
+
+/* ----------------------- */
+/* TESTI */
+/* ----------------------- */
+
+h1 {
+    color: #ab9692;
+    text-align: center;
     margin-bottom: 20px;
+    font-style: italic;
+    font-size: 2rem;
 }
 
-.event-img {
-    width: 50px; /* Imposta una larghezza fissa per l'immagine */
-    height: auto;
-    margin-right: 20px; /* Distanza tra l'immagine e il testo */
-    border-radius: 8px; /* Arrotonda gli angoli dell'immagine */
+p {
+    font-size: 1.2rem;
+    color: #794f4f;
+    margin: 10px 0;
+    line-height: 1.6;
 }
 
-/* Stili per il link */
+strong {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ab9692;
+}
+
+/* ----------------------- */
+/* LINK */
+/* ----------------------- */
+
 a {
-    color: #006400; /* Colore verde scuro per il link */
+    color: #ab9692;
     text-decoration: none;
 }
 
 a:hover {
-    color: #ab9692; /* Colore arancione quando il mouse passa sopra */
-    text-decoration: underline; /* Aggiungi la sottolineatura al passaggio del mouse */
+    color: #383231;
+    text-decoration: underline;
 }
 
-/* Personalizzazione del testo */
-h1 {
-    color: rgb(154, 144, 85);  /* Colore dorato per il titolo */
-    text-align: center;
-    margin-bottom: 20px;
-}
+/* ----------------------- */
+/* EVENTI */
+/* ----------------------- */
 
-p {
-    font-size: 3rem;
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-strong {
-    font-size: 1.5rem; /* Grandezza la sscritta programma del giorno */
-    font-weight: bold;
-    color: rgb(29, 71, 29);
-}
-
-
-/* Riquadro verde chiaro */
-.info-box {
-    background-color: #d4edda;  /* verde chiaro */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;  /* Centra tutto il contenuto all'interno del riquadro */
-}
-
-/* Titolo in corsivo */
-h1 {
-    font-style: italic;  /* Applica il corsivo al titolo */
-    font-size: 2rem;
-}
-
-/* Layout a griglia per gli eventi */
 .event-info {
     display: flex;
     align-items: center;
-    justify-content: center;  /* Centra l'immagine e il testo orizzontalmente */
+    justify-content: center;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
-/* Immagine degli eventi */
 .event-img {
-    width: 50px;  /* Larghezza standard per le icone a sinistra */
+    width: 50px;
     height: auto;
-    margin: 0 15px;  /* Aggiungi uno spazio a destra e a sinistra */
+    margin: 0 15px;
     border-radius: 5px;
     transition: transform 0.3s ease-in-out;
 }
 
-/* Posizione delle icone a sinistra e a destra */
+.event-img:hover {
+    transform: scale(1.0);
+}
+
 .left-icon {
-    order: -1;  /* Questo sposterà l'icona a sinistra */
+    order: -1;
 }
 
 .right-icon {
-    order: 1;  /* Questo sposterà l'icona a destra */
-    width: 25px;  /* Riduci la larghezza dell'icona a destra */
+    order: 1;
+    width: 25px;
 }
 
-/* Effetto hover per l'immagine */
-.event-img:hover {
-    transform: scale(1.1);
-}
+/* ----------------------- */
+/* RESPONSIVE DESIGN */
+/* ----------------------- */
 
-/* Stile per il testo */
-p {
-    font-size: 1.2rem;
-    color: #333;
-    margin: 10px 0;  /* Spazio tra i paragrafi */
-}
-
-a {
-    color: #006400;  /* Colore verde scuro */
-    text-decoration: none;
-}
-
-a:hover {
-    color: #383231;  /* Colore rosso quando il mouse passa sopra */
-    text-decoration: underline;
-}
-
-/* Responsività per schermi piccoli */
 @media (max-width: 768px) {
     .event-info {
         flex-direction: column;
         align-items: center;
-    }
-
-    .event-img {
-        width: 40px;
-    }
-
-    .title1 {
-        font-size: 5rem; /* Dimensione del titolo ridotta */
-    }
-
-    .subtitle {
-        font-size: 2rem; /* Dimensione del sottotitolo ridotta */
-    }
-
-    .info-box {
-        width: 90%; /* Allarga il riquadro su schermi più piccoli */
-    }
-
-    p {
-        font-size: 1rem; /* Riduci la dimensione del testo */
-    }
-
-    h1 {
-        font-size: 1.5rem; /* Riduci la dimensione del titolo */
-    }
-
-    .event-info {
         margin-bottom: 10px;
     }
 
     .event-img {
-        width: 35px; /* Rende le immagini più piccole su mobile */
+        width: 25px;
     }
+
+    .info-box {
+        width: 90%;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+    .home {
+    min-height: 100vh;
+    padding-top: 60px; /* o quello che serve per navbar */
+    background-image: url('fioreAmbra.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start; /* evita che il contenuto si centri verticalmente */
+    flex-direction: column;
+    }
+
+    .custom-button {
+    background-color: #ac898f;
+    color: #4b2c2c;
+    font-weight: bold;
+    padding: 8px 10px;
+    border-radius: 6px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 0.9rem;
+    white-space: normal;
+    max-width: 150px;
+    float: right;
+    margin-bottom: 20px; /* <-- aggiunto margine sotto */
+    }
+
+
+    .custom-button:hover {
+        background-color: #8a6a73;
+        color: #3a1f1f;
+    }
+
+    .custom-button {
+        /* ...tutto quello che avevamo prima... */
+        margin-bottom: 20px;
+    }
+
+    .button-wrapper::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .event-img {
+        width: 25px;
+        height: auto;
+        margin: 0 10px 0 0; /* elimina o riduci margine sinistro */
+        border-radius: 5px;
+        transition: transform 0.3s ease-in-out;
+    }
+
 }
