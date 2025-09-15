@@ -81,7 +81,7 @@ body, html {
 
 /* La sezione Home copre tutta la pagina e ha lo sfondo */
 .home {
-    height: 70%;
+    height: 100%;
     background-image: url('iniziali.jpeg'); /* Nome del tuo file immagine */
     background-size: cover;  /* L'immagine copre tutta l'area */
     background-position: center;  /* Centriamo l'immagine */
@@ -89,7 +89,7 @@ body, html {
     justify-content: center;  /* Centra orizzontalmente */
     align-items: center;  /* Centra verticalmente */
     flex-direction: column; /* Impostiamo la direzione verticale per il testo */
-    padding-top: 90px; /* Aggiungiamo spazio in alto per la navbar e il menu */
+    padding-top: 100px; /* Aggiungiamo spazio in alto per la navbar e il menu */
 }
 
 /* Stile per il titolo (Francesco e Ambra) */
@@ -181,6 +181,3 @@ body, html {
         font-size: 6vw;
     }
 }
-
-
-
