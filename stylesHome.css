@@ -220,6 +220,20 @@ body, html {
         padding: 10px 20px;
     }
 }
+.menu-instruction {
+    position: absolute;
+    top: 80%;
+    right: 10%;
+    background-color: rgba(169, 120, 120, 0.85);
+    color: #f5e9e9;
+    font-size: 2.8vw;
+    font-weight: bold;
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    text-align: right;
+    max-width: 80%;
+}
 
 
 }
