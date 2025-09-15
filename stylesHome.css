@@ -190,27 +190,7 @@ body, html {
     letter-spacing: 1px;
 }
 
-.btn-open-menu {
-    position: absolute;
-    top: 60%;
-    right: 10%;
-    background-color: rgba(153, 113, 113, 0.85);
-    color: #efd5d5;
-    font-size: 2.5vw;
-    font-weight: bold;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-    box-shadow: 0 4px 6px rgba(238, 219, 219, 0.2);
-    z-index: 500; /* assicurati che stia sopra lo sfondo */
-}
 
-.btn-open-menu:hover {
-    background-color: #765757;
-    transform: scale(1.05);
-}
 
 /* Media query per dispositivi più piccoli */
 @media (max-width: 768px) {
@@ -238,4 +218,5 @@ body, html {
 
 
 }
+
 
