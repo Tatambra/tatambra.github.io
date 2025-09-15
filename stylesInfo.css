@@ -266,5 +266,13 @@ a:hover {
         border-radius: 5px;
         transition: transform 0.3s ease-in-out;
     }
+    .menu-label {
+    color: rgb(211, 187, 187);
+    font-weight: bold;
+    font-style: italic;     /* ✅ corsivo */
+    margin-left: 10px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
 
 }
