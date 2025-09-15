@@ -81,7 +81,7 @@ body, html {
 
 /* La sezione Home copre tutta la pagina e ha lo sfondo */
 .home {
-    height: 90%;
+    height: 70%;
     background-image: url('iniziali.jpeg'); /* Nome del tuo file immagine */
     background-size: cover;  /* L'immagine copre tutta l'area */
     background-position: center;  /* Centriamo l'immagine */
@@ -181,5 +181,6 @@ body, html {
         font-size: 6vw;
     }
 }
+
 
 
