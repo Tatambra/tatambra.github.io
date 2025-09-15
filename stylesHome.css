@@ -82,7 +82,7 @@ body, html {
 /* La sezione Home copre tutta la pagina e ha lo sfondo */
 .home {
     height: 100%;
-    background-image: url('fioreAmbra.jpg'); /* Nome del tuo file immagine */
+    background-image: url('iniziali.jpeg'); /* Nome del tuo file immagine */
     background-size: cover;  /* L'immagine copre tutta l'area */
     background-position: center;  /* Centriamo l'immagine */
     display: flex;
