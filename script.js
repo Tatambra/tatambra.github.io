@@ -7,3 +7,5 @@ burgerMenu.addEventListener('click', () => {
     // Toggle tra mostrare e nascondere il menu
     dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
 });
+
+

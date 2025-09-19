@@ -245,4 +245,51 @@ button:hover {
     font-size: 1.2rem;
     letter-spacing: 1px;
 }
+
+.responsive-image {
+  width: 100%;      /* Immagine a tutta larghezza del container */
+  height: auto;     /* Mantieni proporzioni */
+  margin-bottom: 15px; /* Spazio tra un’immagine e l’altra */
+  border-radius: 8px;  /* Angoli leggermente arrotondati, opzionale */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* Ombra leggera, opzionale */
+}
+body, html {
+    font-family: Arial, sans-serif;
+    min-height: 100%;
+    /* togli height: 100%; */
+}
+
+.home {
+    padding-top: 60px; /* spazio per navbar */
+    min-height: 100vh;  /* almeno tutta l'altezza del viewport */
+    /* rimuovi altezza fissa */
+}
+
+ .info-box {
+        width: 90%;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+h1 {
+    color: #ab9692;
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-size: 2rem;
+}
+    h1 {
+        font-size: 1.2rem;
+    }
+    .home {
+    min-height: 100vh;
+    padding-top: 60px; /* o quello che serve per navbar */
+    background-image: url('fioreAmbra.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start; /* evita che il contenuto si centri verticalmente */
+    flex-direction: column;
+    }
 }
